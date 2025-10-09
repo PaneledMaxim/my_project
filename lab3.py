@@ -10,3 +10,19 @@
 # words = ["python", "Java", "c++", "dog", "Rust", "go"]
 # result = [word.upper() for word in words if len(word) >= 3]
 # print(result)
+
+# 4.
+# class Countdown:
+#     def __init__(self, n):
+#         self.n = n
+#
+#     def __iter__(self):
+#         num = self.n
+#         while num >= 1:
+#             yield num
+#             num -= 1
+#
+# # Использование
+# for x in Countdown(5):
+#     print(x)
+
