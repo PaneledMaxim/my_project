@@ -144,3 +144,31 @@
 # print(f"Дней до следующего дня рождения: {days_to_birthday} дней")
 
 10.
+from datetime import datetime
+
+
+def format_datetime(dt):
+    # Словари для русских названий месяцев и дней
+    months = {
+        1: 'января', 2: 'февраля', 3: 'марта', 4: 'апреля',
+        5: 'мая', 6: 'июня', 7: 'июля', 8: 'августа',
+        9: 'сентября', 10: 'октября', 11: 'ноября', 12: 'декабря'
+    }
+
+    # Форматируем строку
+    formatted = f"Сегодня {dt.day} {months[dt.month]} {dt.year} года, время: {dt:%H:%M}"
+
+    return formatted
+
+
+# Пример использования
+current_time = datetime.now()
+print(format_datetime(current_time))
+
+# Можно передать любую дату
+example_date = datetime(2025, 9, 26, 5, 30)
+print(format_datetime(example_date))
+
+git add .
+git commit -m "задание8"
+git push
