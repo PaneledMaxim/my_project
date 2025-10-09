@@ -1,13 +1,13 @@
 def task1():
     """Генератор списка квадратов чисел"""
     print("=== Задание 1: Генератор списка квадратов ===")
-    squares = [x  2 for x in range(1, 11)]
+    squares = [x ** 2 for x in range(1, 11)]
     print(squares)
     print()
 
 
 def task2():
-    """Генератор списка четных чисел/"""
+    """Генератор списка четных чисел"""
     print("=== Задание 2: Генератор списка четных чисел ===")
     even_numbers = [x for x in range(1, 20) if x % 2 == 0]
     print(even_numbers)
@@ -80,7 +80,7 @@ def task6():
         # S = P * (1 + r/(12*100))^(12*t)
         monthly_rate = interest_rate / (Decimal('12') * Decimal('100'))
         months = Decimal('12') * years
-        final_amount = initial_amount * (Decimal('1') + monthly_rate)  months
+        final_amount = initial_amount * (Decimal('1') + monthly_rate) ** months
 
         # Округляем до копеек (2 знака после запятой)
         final_amount = final_amount.quantize(Decimal('0.01'))
@@ -147,6 +147,7 @@ def task8():
     current_time = current_datetime.time()
     print(f"Только текущее время: {current_time}")
     print()
+
 
 def task9():
     """Расчет дней до дня рождения"""
@@ -260,7 +261,7 @@ def main():
 
 
 # Запуск программы
-if name == "main":
+if __name__ == "__main__":
     main()
 
 
