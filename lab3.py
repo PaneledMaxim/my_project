@@ -100,17 +100,47 @@
 # print(f"Умножение: {frac1} * {frac2} = {multiplication}")
 # print(f"Деление: {frac1} / {frac2} = {division}")
 
-8.
-from datetime import datetime
+# 8.
+# from datetime import datetime
+#
+# # Текущая дата и время
+# current_datetime = datetime.now()
+# print(f"Текущая дата и время: {current_datetime}")
+#
+# # Только текущая дата
+# current_date = current_datetime.date()
+# print(f"Только текущая дата: {current_date}")
+#
+# # Только текущее время
+# current_time = current_datetime.time()
+# print(f"Только текущее время: {current_time}")
 
-# Текущая дата и время
-current_datetime = datetime.now()
-print(f"Текущая дата и время: {current_datetime}")
+# 9.
+# from datetime import datetime, date
+#
+# # День рождения
+# birthday = date(2005, 12, 9)  # год, месяц, день
+#
+# # Сегодняшняя дата
+# today = date.today()
+#
+# # Сколько дней прошло с момента рождения
+# days_passed = (today - birthday).days
+#
+# # Следующий день рождения в этом году
+# next_birthday = date(today.year, birthday.month, birthday.day)
+#
+# # Если день рождения в этом году уже прошел, берем следующий год
+# if next_birthday < today:
+#     next_birthday = date(today.year + 1, birthday.month, birthday.day)
+#
+# # Сколько дней до следующего дня рождения
+# days_to_birthday = (next_birthday - today).days
+#
+# # Вывод результатов
+# print(f"День рождения: {birthday.strftime('%d.%m.%Y')}")
+# print(f"Сегодня: {today.strftime('%d.%m.%Y')}")
+# print(f"Дней прошло с рождения: {days_passed:,} дней".replace(',', ' '))
+# print(f"Дней до следующего дня рождения: {days_to_birthday} дней")
 
-# Только текущая дата
-current_date = current_datetime.date()
-print(f"Только текущая дата: {current_date}")
-
-# Только текущее время
-current_time = current_datetime.time()
-print(f"Только текущее время: {current_time}")
+10.
