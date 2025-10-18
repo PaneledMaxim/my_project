@@ -210,7 +210,7 @@ def task10():
     print(format_datetime(example_date))
     print()
 
-
+###
 def main():
     """Главное меню для выбора заданий"""
     while True:
