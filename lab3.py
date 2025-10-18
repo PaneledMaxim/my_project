@@ -4,7 +4,7 @@ def task1():
     squares = [x ** 2 for x in range(1, 11)]
     print(squares)
     print()
-
+#####
 
 def task2():
     """Генератор списка четных чисел"""
@@ -156,7 +156,7 @@ def task9():
     from datetime import datetime, date
 
     # День рождения
-    birthday = date(2005, 12, 9)  # год, месяц, день
+    birthday = date(2005, 12, 19)  # год, месяц, день
 
     # Сегодняшняя дата
     today = date.today()
